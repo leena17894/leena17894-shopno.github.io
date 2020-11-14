@@ -6,7 +6,6 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@400;700;800&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="fonts/fontawesome-free-5.15.1-web/"> -->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -391,13 +390,13 @@
         <div class="above"></div>
         <div class="container">
             <div class="contacts__wrapper">
-                <div class="form">
-                    <input class="form__name" placeholder="Name*"></input>
-                    <input class="form__subject" placeholder="Subject*"></input>
-                    <input class="form__e-mail" type="email" placeholder="E-mail*"></input>
-                    <input class="form__message" placeholder="Message*"></input>
+                <form class="form">
+                    <input name="name" required class="form__name" placeholder="Name*" type="text"></input>
+                    <input name="subject" required class="form__subject" placeholder="Subject*" type="text"></input>
+                    <input name="email" required class="form__e-mail" type="email" placeholder="E-mail*" type="email"></input>
+                    <textarea class="form__message" placeholder="Message*"></textarea>
                     <button class="form__btn">Send message</button>
-                </div>
+                </form>
                 <div class="address">
                     <div class="address__info">
                         <p>Adress line 1</p>
