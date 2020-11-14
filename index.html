@@ -6,20 +6,21 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@400;700;800&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <section class="head" id="home">
         <nav class="hidden">
-            <div class="menu">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#what-say">What-say</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
+            <div >
+                <ul class="menu">
+                    <li class="menu__item"><a href="#home">Home</a></li>
+                    <li class="menu__item"><a href="#about">About</a></li>
+                    <li class="menu__item"><a href="#works">Works</a></li>
+                    <li class="menu__item"><a href="#service">Service</a></li>
+                    <li class="menu__item"><a href="#team">Team</a></li>
+                    <li class="menu__item"><a href="#what-say">What-say</a></li>
+                    <li class="menu__item"><a href="#contacts">Contacts</a></li>
                 </ul>
             </div>
         </nav>
@@ -28,7 +29,7 @@
                 <a href="#" class="header__logo">
                     <img src="img/Shopno-one-page (1).jpeg" alt="logo">
                 </a>
-                <aside class="sidebar sidebar_hidden">
+                <aside class="hamburger sidebar_hidden">
                     <span class="sidebar-block"></span>
                     <span class="sidebar-block"></span>
                     <span class="sidebar-block"></span>
@@ -401,7 +402,7 @@
                     <div class="address__info">
                         <p>Adress line 1</p>
                         <p>Adress line 2</p>
-                        <p>Phone: +548 945645</p>
+                        <p>Phone: <a href="+548945645">+548 945645</a></p>
                         <p>Fax: +456456 54546</p>
                         <p>Web: www.designagency.net</p>
                         <p>E-mail: info@designagency.net</p>
@@ -446,6 +447,7 @@
         <div class="copyrights">Copyright Masum Parvej, All Rights Reserved</div>
     </footer>
 
+    
     <script src="js/script.js"></script>
 </body>
 </html>
