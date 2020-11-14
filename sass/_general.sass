@@ -1,0 +1,635 @@
+html
+	height: 100%
+	min-width: 100%
+
+body
+	height: 100%
+	min-width: 100%
+	color: #505050
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.container
+	max-width: 1140px
+	margin: 0 auto
+
+.head
+	min-height: 807px
+	padding: 63px 0 130px 0
+	background-color: #EFF0F2
+	position: relative
+	.menu
+		height: 100vh
+		width: 25%
+		background-color: rgba(0, 0, 0, .7)
+		position: fixed
+		top: 0
+		z-index: 2
+		transform: translateY(-100%)
+		font-family: 'Montserrat', sans-serif
+		ul
+			text-transform: uppercase
+			text-align: center
+			padding: 50px 0
+			li
+				padding: 20px
+				a
+					text-decoration: none
+					display: block
+					color: #fff
+					&:hover
+						color: #76F4EA
+					&:active
+						color: #a7f1a2
+						
+	.header
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: relative
+		.sidebar
+			width: 31px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			.sidebar-block
+				width: 100%
+				height: 5px
+				background-color: rgba(0, 0, 0, 0.6)
+				border-radius: 10px
+				margin-top: 4px
+				&:first-child
+					margin-top: 0
+		&:hover 
+			.sidebar-block
+				background: #76F4EA
+			
+	&__text
+		margin-top: 206px
+		text-align: center
+		text-transform: uppercase
+		font-family: 'Montserrat', sans-serif
+		font-weight: bold
+		font-size: 45px
+		mark
+			background-color: rgba(113, 246, 235, 0.5)
+			color: #505050
+	&__btn
+		width: 233px
+		height: 54px
+		display: block
+		padding: 20px 50px
+		margin: 150px auto 0 auto
+		text-transform: uppercase
+		border: 1px solid black
+		border-radius: 4px
+		font-size: 18px
+		&:hover
+			background-color: #71F6EB
+			color: white
+			border: 0px
+			transition: .3s
+	&__glass
+		width: 94px
+		height: 103px
+		position: absolute
+		right: 20%
+		bottom: 13%
+		background: url(../img/glass.jpeg)
+
+.about
+	min-height: 986px
+	padding: 127px 0 164px 0
+	background-color: #F8FAFA
+	&__header
+		+header
+	&__sub-header
+		+sub-header
+	&__info
+		display: flex
+		justify-content: space-between
+		position: relative
+		margin-top: 139px
+		.about__slider
+			width: 480px
+			height: 540px
+			position: relative
+			.about__img
+				width: 393px
+				height: 484px
+				position: absolute
+				left: 44px
+				z-index: 1
+				background: url('../img/Image@1X.png') center (center / cover) no-repeat
+			.about__under-rect
+				width: 480px
+				height: 413px
+				background-color: #EFF0F2
+				position: absolute
+				top: 35px
+				z-index: 0
+		.about__text
+			min-width: 484px
+			position: absolute
+			left: 591px
+			font-family: 'Raleway', sans-serif
+			font-weight: normal
+			.amazing-works-title
+				text-transform: uppercase
+				font-family: 'Merriweather', serif
+				font-weight: bold
+				font-size: 20px
+				letter-spacing: 1px
+			.amazing-works-text
+				margin-top: 31px
+				font-family: 'Raleway', sans-serif
+				font-weight: normal
+				font-size: 16px
+				line-height: 27px
+				letter-spacing: 1px
+			.we-great-title
+				margin-top: 38px
+				text-transform: uppercase
+				font-family: 'Merriweather', serif
+				font-weight: bold
+				font-size: 20px
+				letter-spacing: 1px
+			.we-gret-text
+				margin-top: 27px
+				font-size: 16px
+				font-family: 'Raleway', sans-serif
+				font-weight: normal
+				line-height: 27px
+				letter-spacing: 1px
+
+.works
+	min-height: 1165px
+	padding: 130px 0 112px 0
+	background-color: #fff
+	&__header
+		+header
+	&__sub-header
+		+sub-header
+	&__wrapper
+		+wrapper
+		a
+			img
+				width: 370px
+				height: 360px
+				margin-bottom: 12px
+
+.service
+	min-height: 1619px
+	background-color: #F9FBFB
+	padding: 125px 0
+	&__header
+		+header
+	&__sub-header
+		+sub-header
+	&__wrapper
+		margin-top: 122px
+		margin-left: -12px
+		display: flex
+		flex-wrap: wrap
+		.advantages_size_big
+			width: 655px
+			height: 423px
+			margin-bottom: 12px
+			position: relative
+			display: flex
+			justify-content: center
+			overflow: hidden
+			&:hover
+				.advantages__more-info
+					+hover-more-info
+			.advantages__dimmer
+				+dimmer
+			.advantages-descr
+				+advantages-descr
+				h4
+					text-transform: uppercase
+					font-family: 'Merriweather', serif
+					font-weight: bold
+					font-size: 20px
+					letter-spacing: 1px
+				p
+					margin-top: 28px
+					font-family: 'Raleway', sans-serif
+					font-size: 16px
+					line-height: 25px
+				&__more
+					+descr-more
+			.advantages__more-info
+				+more-info
+			.advantages__more-info_size_big
+				padding: 64px 116px 57px 60px
+				h4
+					+more-info-h4
+				p
+					+more-info-p
+				.advantages__btn-close
+					+more-info-btn	
+		.advantages_size_middle
+			width: 475px
+			height: 423px
+			margin-left: 12px
+			margin-bottom: 12px
+			position: relative
+			display: flex
+			justify-content: flex-start
+			overflow: hidden
+			&:hover
+				.advantages__more-info
+					+hover-more-info
+			.advantages__dimmer
+				+dimmer
+			&__descr
+				+advantages-descr
+				+descr
+				h4
+					+descr-h4
+				p
+					+descr-p
+				&__more
+					+descr-more
+				.advantages-descr__more_middle
+					+descr-more
+					margin-top: 15px
+			.advantages__more-info_size_middle
+				+more-info
+				padding: 64px 60px 57px 60px
+				h4
+					+more-info-h4
+				p
+					+more-info-p
+				.advantages__btn-close
+					+more-info-btn	
+		.advantages_size_double
+			width: 653px
+			height: 374px
+			margin-right: 12px
+			margin-bottom: 12px
+			position: relative
+			display: flex
+			justify-content: center
+			overflow: hidden
+			&:hover
+				.advantages__more-info
+					+hover-more-info
+			img
+				display: block
+				z-index: 0
+			.advantages__dimmer
+				+dimmer
+			&:last-child 
+				margin-right: 0
+				margin-left: 12px
+				margin-bottom: 0
+				img
+					object-fit: contain
+			.advantages-descr
+				+advantages-descr
+				h4
+					+descr-h4
+				p
+					+descr-p
+				&__more
+					+descr-more
+				.advantages-descr__more_double
+					+descr-more
+					margin-top: 15px
+			.advantages__more-info_size_double
+				+more-info
+				padding: 64px 60px 57px 60px
+				h4
+					+more-info-h4
+				p
+					+more-info-p
+				.advantages__btn-close
+					+more-info-btn	
+		.advantages_size_small
+			width: 475px
+			height: 372px
+			display: flex
+			position: relative
+			overflow: hidden
+			&:hover
+				.advantages__more-info
+					+hover-more-info
+			.advantages__dimmer
+				+dimmer
+			&__descr
+				+advantages-descr
+				+descr
+				h4
+					+descr-h4
+				p
+					+descr-p
+				.advantages-descr__more_small
+					font-family: 'Raleway', sans-serif
+					font-weight: 600
+					font-size: 16px
+					+descr-more
+					margin-top: 5px
+			.advantages__more-info_size_small
+				+more-info
+				padding: 64px 60px 57px 60px
+				h4
+					+more-info-h4
+				p
+					+more-info-p
+				.advantages__btn-close
+					+more-info-btn	
+
+
+
+	
+
+
+
+//  .advantages-descr__more_small, 
+// 	+descr-more
+
+// .advantages-descr__more_small, .advantages-descr__more_middle
+// 	margin-top: 15px
+
+// .advantages_size_big:hover .advantages__more-info, .advantages_size_middle:hover .advantages__more-info, .advantages_size_small:hover .advantages__more-info, .advantages_size_double:hover .advantages__more-info
+// 	+more-info
+
+
+
+.team
+	min-height: 1186px
+	background-color: #fff
+	padding: 125px 0 117px 0
+	&__header
+		+header
+	&__sub-header
+		+sub-header
+	&__wrapper
+		+wrapper
+		.worker
+			position: relative
+			&:hover 
+				.statement
+					opacity: 1
+					transition: 0.95s
+			img
+				width: 371px
+				height: 441px
+				margin-bottom: 12px
+			.statement
+				position: absolute
+				z-index: 1
+				top: 165px
+				left: 18px
+				opacity: 0
+				&__triangle
+					width: 43px
+					height: 38px
+					clip-path: polygon(50% 0%, 0% 100%, 100% 100%)
+					background-color: #71F6EC
+					margin-left: 29px
+					position: absolute
+					top: -19px
+				&__rectangle
+					width: 336px
+					height: 242px
+					padding: 44px 54px 42px 39px
+					background-color: #6DF6EB
+					z-index: 4
+					position: absolute
+					&-author
+						text-transform: uppercase
+						font-family: 'Merriweather', serif
+						font-weight: bold
+						font-size: 20px
+						color: rgba(39, 39, 39, 0.9)
+						span
+							text-transform: none
+							font-weight: normal
+							color: rgba(120, 120, 120, 0.9)
+							font-size: 15px
+							font-style: italic 
+					p
+						margin-top: 23px
+						font-size: 16px
+						color: rgba(39, 39, 39, 0.8)
+						font-family: 'Raleway', sans-serif
+						font-weight: normal
+					&-socials
+						display: flex
+						margin-top: 40px
+						width: 88px
+						height: 14px
+						justify-content: space-between
+						a
+							display: block
+							i
+								font-size: 15px
+								color: rgba(0, 0, 0, .7)
+.what-say
+	min-height: 924px
+	background-color: #F9FBFB
+	padding: 122px 0 140px 0
+	&__header
+		+header
+	&__sub-header
+		+sub-header
+	&__info
+		display: flex
+		position: relative
+		margin-top: 136px
+	&__slider
+		display: block
+		position: absolute
+		left: 37px
+		z-index: 1
+	&__under-rect
+		position: absolute
+		top: 24px
+		width: 435px
+		height: 363px
+		background-color: #ECEDEF
+		z-index: 0
+	&__text
+		width: 667px
+		height: 363px
+		position: absolute
+		top: 24px
+		padding: 102px 81px 69px 69px
+		background-color: #EAEBED
+		z-index: 1
+		left: 490px
+		text-align: center
+	&__author
+		font-family: 'Merriweather', serif
+		text-transform: uppercase
+		font-size: 20px
+		color: rgba(39, 39, 39, 0.9)
+		font-weight: 900
+		letter-spacing: 1px
+		span
+			color: rgba(120, 120, 120, 0.9)
+			text-transform: uppercase
+			font-weight: normal
+			font-style: italic
+			font-size: 17px
+	&__text 
+		.what-say__author
+			text-transform: uppercase
+		p
+			margin-top: 30px
+			font-family: 'Raleway', sans-serif
+			font-size: 16px
+			color: rgba(0, 0, 0, 0.7)
+			line-height: 23px
+			letter-spacing: 1px
+		.text-stars
+			width: 105px
+			margin-top: 32px
+			margin-left: 192px
+			display: flex
+			justify-content: space-between
+			.star
+				width: 16px
+				height: 15px
+	&__slickers
+		display: flex
+		justify-content: space-between
+		position: absolute
+		left: 1020px
+		top: 416px
+		width: 136px
+		height: 54px
+		margin-top: 29px
+		&-prev
+			+slickers
+			&:hover
+				background-color: #71F6EB
+		&-next
+			+slickers
+			&:hover
+				background-color: #71F6EB
+
+.companies
+	padding: 108px 168px 106px 154px
+	&__wrapper
+		height: 172px
+	&-main
+		display: flex
+		margin: 0 auto
+		width: 500px
+		justify-content: space-between
+		.comp-icon
+			+comp-icon
+	&-other
+		display: flex
+		justify-content: space-between
+		margin-top: 30px
+		width: 1133px
+		.comp-icon
+			+comp-icon
+
+.contacts
+	position: relative
+	padding: 121px 0
+	min-height: 716px
+	background: url('../img/christmas_snow_trees-wide@1X.png') 80% (80% / cover) no-repeat
+	.above
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(248, 250, 251, 0.6))
+	&__wrapper
+		display: flex
+		justify-content: space-between
+	.form
+		width: 615px
+		height: 461px
+		display: inline-block
+		background-color: #021623
+		opacity: 0.7098039215686275
+		padding: 48px 0 38px 36px
+		&__name, &__subject, &__e-mail, &__message
+			display: block
+			width: 551px
+			border: 0px
+			border-bottom: 1px solid gray
+			background: none
+			padding-bottom: 16px
+			margin-top: 30px
+			outline: none
+			color: rgba(255, 255, 255, 0.6)
+			font-family: 'Raleway', sans-serif
+			font-size: 14px
+		&__name
+			margin-top: 0
+		&__message
+			padding-bottom: 88px
+		&__btn
+			width: 245px
+			height: 54px
+			text-align: center
+			margin-top: 37px
+			text-transform: uppercase
+			background-color: #6EEEE4
+			border: none
+			font-family: 'Montserrat', sans-serif
+			font-weight: 600
+			font-size: 18px
+			letter-spacing: 1px
+			color: rgba(0, 0, 0, 0.7)
+			&:active, &:focus
+				outline: none
+	.address
+		width: 501px
+		height: 462px
+		display: inline-block
+		background-color: #021623
+		opacity: 0.7098039215686275
+		padding: 37px 0 19px 23px
+		color: rgba(255, 255, 255, 0.7)
+		font-family: 'Raleway', sans-serif
+		font-size: 15px
+		&__info p
+			margin-top: 5px
+			&:nth-child(5)
+				margin-top: 27px
+		&__map
+			margin-top: 23px
+			width: 455px
+			height: 224px
+
+.footer
+	min-height: 317px
+	background-color: #262B2E
+	padding: 94px 0
+	text-align: center
+	&-socials
+		display: flex
+		width: 206px
+		margin: 18px auto 0 auto
+		justify-content: space-between
+		.icon
+			display: block
+			width: 47px
+			height: 41px
+			fill: #8D8D8D
+			opacity: 0.3411764705882353
+			&:hover
+				fill: #71F6EB
+				transition: .2s
+				opacity: 1		
+	.follow
+		font-family: 'Raleway', sans-serif
+		color: rgba(255, 255, 255, 0.8)
+		font-size: 16px
+	.copyrights
+		margin-top: 43px
+		font-family: 'Raleway', sans-serif
+		font-weight: 500
+		color: rgba(255, 255, 255, 0.8)
+		font-size: 16px
+
