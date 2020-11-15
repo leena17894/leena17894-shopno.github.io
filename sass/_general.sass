@@ -42,8 +42,7 @@ body
 				&:hover
 					color: #76F4EA
 				&:active
-					color: #a7f1a2
-						
+					color: yellow				
 	.header
 		display: flex
 		justify-content: space-between
@@ -70,12 +69,10 @@ body
 					&:nth-child(2)
 						transform: rotate(45deg)
 					&:nth-child(3)
-						display: none
-						
-							
-		&:hover 
-			.sidebar-block
-				background: #76F4EA
+						display: none					
+			&:hover 
+				.sidebar-block
+					background: #76F4EA
 			
 	&__text
 		margin-top: 206px
@@ -500,14 +497,10 @@ body
 		width: 136px
 		height: 54px
 		margin-top: 29px
-		&-prev
+		&-prev, &-next
 			+slickers
 			&:hover
-				background-color: #71F6EB
-		&-next
-			+slickers
-			&:hover
-				background-color: #71F6EB
+				background-color: $green
 
 .companies
 	padding: 108px 168px 106px 154px
@@ -620,7 +613,7 @@ body
 			fill: #8D8D8D
 			opacity: 0.3411764705882353
 			&:hover
-				fill: #71F6EB
+				fill: $green
 				transition: .2s
 				opacity: 1		
 	.follow
